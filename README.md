@@ -1,5 +1,3 @@
-port : http://localhost:3000
-
 Routes: [
     '/api/users',
     '/api/crimes'
