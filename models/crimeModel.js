@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const { states } = require('../utils/enums')
 
 const crimeSchema = mongoose.Schema(
     {
@@ -9,6 +10,7 @@ const crimeSchema = mongoose.Schema(
         },
         location: {
             type: String,
+            enum: states,
             required: [true, 'Report cannot be made without a location']
         },
         actions: {
