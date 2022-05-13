@@ -1,5 +1,4 @@
-port : http://localhost:3000
-
+********MUST BE LOGGED IN TO ACCESS ANY ROUTE**********
 Routes: [
     '/api/users',
     '/api/crimes'
