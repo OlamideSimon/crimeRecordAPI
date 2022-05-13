@@ -12,8 +12,13 @@ connectDb()
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
+
 app.use('/api/crimes', crimeRoute)
 app.use('/api/users', userRoute)
+
+app.get('/', (req, res) => {
+  res.send('APIs include: /api/users and /api/crimes')
+})
 
 app.use(errorHandler)
 
